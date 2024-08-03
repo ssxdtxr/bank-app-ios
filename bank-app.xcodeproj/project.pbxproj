@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC54B7592C5ED4F20093049D /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54B7582C5ED4F20093049D /* CategoryModel.swift */; };
+		DC54B75C2C5EDA4F0093049D /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54B75B2C5EDA4F0093049D /* CategoryView.swift */; };
+		DC54B75E2C5EE2390093049D /* VisualBlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54B75D2C5EE2390093049D /* VisualBlurEffect.swift */; };
+		DC54B7602C5EE3920093049D /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54B75F2C5EE3920093049D /* CategoryDetailView.swift */; };
 		DC9D47FB2C5E7BFF0021B3CC /* bank_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9D47FA2C5E7BFF0021B3CC /* bank_appApp.swift */; };
 		DC9D47FD2C5E7BFF0021B3CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9D47FC2C5E7BFF0021B3CC /* ContentView.swift */; };
 		DC9D47FF2C5E7C010021B3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC9D47FE2C5E7C010021B3CC /* Assets.xcassets */; };
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC54B7582C5ED4F20093049D /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		DC54B75B2C5EDA4F0093049D /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		DC54B75D2C5EE2390093049D /* VisualBlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualBlurEffect.swift; sourceTree = "<group>"; };
+		DC54B75F2C5EE3920093049D /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
 		DC9D47F72C5E7BFF0021B3CC /* bank-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bank-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9D47FA2C5E7BFF0021B3CC /* bank_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bank_appApp.swift; sourceTree = "<group>"; };
 		DC9D47FC2C5E7BFF0021B3CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +85,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC54B7572C5ED4DD0093049D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC9D48282C5E804F0021B3CC /* CardModel.swift */,
+				DC54B7582C5ED4F20093049D /* CategoryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DC54B75A2C5EDA1D0093049D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC9D48262C5E80250021B3CC /* CardView.swift */,
+				DC9D48242C5E7CE20021B3CC /* HomeView.swift */,
+				DC54B75B2C5EDA4F0093049D /* CategoryView.swift */,
+				DC54B75F2C5EE3920093049D /* CategoryDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DC9D47EE2C5E7BFF0021B3CC = {
 			isa = PBXGroup;
 			children = (
@@ -100,11 +128,11 @@
 		DC9D47F92C5E7BFF0021B3CC /* bank-app */ = {
 			isa = PBXGroup;
 			children = (
+				DC54B75D2C5EE2390093049D /* VisualBlurEffect.swift */,
+				DC54B7572C5ED4DD0093049D /* Models */,
+				DC54B75A2C5EDA1D0093049D /* Views */,
 				DC9D47FA2C5E7BFF0021B3CC /* bank_appApp.swift */,
 				DC9D47FC2C5E7BFF0021B3CC /* ContentView.swift */,
-				DC9D48282C5E804F0021B3CC /* CardModel.swift */,
-				DC9D48242C5E7CE20021B3CC /* HomeView.swift */,
-				DC9D48262C5E80250021B3CC /* CardView.swift */,
 				DC9D47FE2C5E7C010021B3CC /* Assets.xcassets */,
 				DC9D48002C5E7C010021B3CC /* Preview Content */,
 			);
@@ -267,10 +295,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC9D48252C5E7CE20021B3CC /* HomeView.swift in Sources */,
+				DC54B75C2C5EDA4F0093049D /* CategoryView.swift in Sources */,
+				DC54B7592C5ED4F20093049D /* CategoryModel.swift in Sources */,
 				DC9D47FD2C5E7BFF0021B3CC /* ContentView.swift in Sources */,
 				DC9D48272C5E80250021B3CC /* CardView.swift in Sources */,
+				DC54B7602C5EE3920093049D /* CategoryDetailView.swift in Sources */,
 				DC9D47FB2C5E7BFF0021B3CC /* bank_appApp.swift in Sources */,
 				DC9D48292C5E804F0021B3CC /* CardModel.swift in Sources */,
+				DC54B75E2C5EE2390093049D /* VisualBlurEffect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

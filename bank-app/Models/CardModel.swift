@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct CardModel: Identifiable {
-    var id = UUID().uuidString
+    let id = UUID().uuidString
     var colors: [Color]
     
     static let colors: [CardModel] = [
