@@ -34,6 +34,7 @@ struct CategoryView: View {
             .padding()
         }
         .frame(width: 160, height: 100)
+        .shadow(radius: 2, x: 2, y:2)
         
         
     }

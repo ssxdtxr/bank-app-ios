@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC5321272C5F8D6100101ADD /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5321262C5F8D6100101ADD /* CustomTabBar.swift */; };
+		DC5321292C5F91E700101ADD /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5321282C5F91E700101ADD /* SendView.swift */; };
+		DC53212B2C5F91F300101ADD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53212A2C5F91F300101ADD /* SettingsView.swift */; };
 		DC54B7592C5ED4F20093049D /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54B7582C5ED4F20093049D /* CategoryModel.swift */; };
 		DC54B75C2C5EDA4F0093049D /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54B75B2C5EDA4F0093049D /* CategoryView.swift */; };
 		DC54B75E2C5EE2390093049D /* VisualBlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54B75D2C5EE2390093049D /* VisualBlurEffect.swift */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC5321262C5F8D6100101ADD /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		DC5321282C5F91E700101ADD /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
+		DC53212A2C5F91F300101ADD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		DC54B7582C5ED4F20093049D /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		DC54B75B2C5EDA4F0093049D /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		DC54B75D2C5EE2390093049D /* VisualBlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualBlurEffect.swift; sourceTree = "<group>"; };
@@ -55,7 +61,7 @@
 		DC9D48112C5E7C010021B3CC /* bank-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bank-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9D48152C5E7C010021B3CC /* bank_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bank_appUITests.swift; sourceTree = "<group>"; };
 		DC9D48172C5E7C010021B3CC /* bank_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bank_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		DC9D48242C5E7CE20021B3CC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DC9D48242C5E7CE20021B3CC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		DC9D48262C5E80250021B3CC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DC9D48282C5E804F0021B3CC /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +107,8 @@
 				DC9D48242C5E7CE20021B3CC /* HomeView.swift */,
 				DC54B75B2C5EDA4F0093049D /* CategoryView.swift */,
 				DC54B75F2C5EE3920093049D /* CategoryDetailView.swift */,
+				DC5321282C5F91E700101ADD /* SendView.swift */,
+				DC53212A2C5F91F300101ADD /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,11 +136,12 @@
 		DC9D47F92C5E7BFF0021B3CC /* bank-app */ = {
 			isa = PBXGroup;
 			children = (
+				DC5321262C5F8D6100101ADD /* CustomTabBar.swift */,
 				DC54B75D2C5EE2390093049D /* VisualBlurEffect.swift */,
+				DC9D47FC2C5E7BFF0021B3CC /* ContentView.swift */,
 				DC54B7572C5ED4DD0093049D /* Models */,
 				DC54B75A2C5EDA1D0093049D /* Views */,
 				DC9D47FA2C5E7BFF0021B3CC /* bank_appApp.swift */,
-				DC9D47FC2C5E7BFF0021B3CC /* ContentView.swift */,
 				DC9D47FE2C5E7C010021B3CC /* Assets.xcassets */,
 				DC9D48002C5E7C010021B3CC /* Preview Content */,
 			);
@@ -300,7 +309,10 @@
 				DC9D47FD2C5E7BFF0021B3CC /* ContentView.swift in Sources */,
 				DC9D48272C5E80250021B3CC /* CardView.swift in Sources */,
 				DC54B7602C5EE3920093049D /* CategoryDetailView.swift in Sources */,
+				DC5321272C5F8D6100101ADD /* CustomTabBar.swift in Sources */,
 				DC9D47FB2C5E7BFF0021B3CC /* bank_appApp.swift in Sources */,
+				DC5321292C5F91E700101ADD /* SendView.swift in Sources */,
+				DC53212B2C5F91F300101ADD /* SettingsView.swift in Sources */,
 				DC9D48292C5E804F0021B3CC /* CardModel.swift in Sources */,
 				DC54B75E2C5EE2390093049D /* VisualBlurEffect.swift in Sources */,
 			);

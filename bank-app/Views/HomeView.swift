@@ -2,7 +2,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State private var selectedItem: CategoryModel? = nil
+    @Binding var selectedItem: CategoryModel?
     @State private var blur = false
     
     @State private var columns = [
@@ -56,6 +56,25 @@ struct HomeView: View {
                         .zIndex(3)
                 }
             }
+            .offset(y: selectedItem == nil ? -50 : 0)
+            .frame(maxWidth: .infinity, maxHeight: selectedItem == nil ? 250 : .infinity)
+            
+            if selectedItem == nil {
+                Button {
+                    print("Button is clicked")
+                } label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 15)
+                        Text("Open a new card")
+                            .foregroundStyle(.white)
+                            .fontWeight(.semibold)
+                    }
+                }
+                .frame(maxWidth: .infinity)
+                .frame(height: 42)
+                .padding(32)
+
+            }
             
             Spacer()
         }
@@ -74,9 +93,10 @@ struct HomeView: View {
                 Circle()
                     .foregroundColor(Color.blue)
                 
-                Image("memoji")
+                Image("user")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
+                    .frame(width: 30, height: 30)
             }
             .frame(width: 55, height: 55)
         }
@@ -107,7 +127,3 @@ struct HomeView: View {
         }
     }
 }
-
-//#Preview {
-//    HomeView()
-//}

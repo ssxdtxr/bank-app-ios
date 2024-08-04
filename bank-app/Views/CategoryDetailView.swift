@@ -31,5 +31,7 @@ struct CategoryDetailView: View {
         .padding()
         .frame(width: 300, height: 300)
         .background(.white)
+        .cornerRadius(10)
+        .shadow(radius: 5)
     }
 }
